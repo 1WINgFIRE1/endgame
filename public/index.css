@@ -1,0 +1,116 @@
+#root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: white;
+    width: 490px;
+    margin: 15vh auto;
+}
+header{
+    height: 30vh;
+    color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+.languages-button{
+    color: white;
+}
+.languages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin: 0 30px;
+    width: auto;
+}
+.languages-button{
+    padding: 5px;
+    background-color: red;
+    border-radius: 4px;
+    cursor: context-menu;
+}
+.languages-button-dead{
+    padding: 5px;
+    border-radius: 4px;
+    cursor: context-menu;
+    opacity: 0.5;
+    position: relative;
+}
+
+.keyboard{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin:  0 30px;
+    flex-wrap: wrap;
+}
+.keyboard-key{
+    background-color: #ffbd00; 
+    padding: 10px;
+    width: 34px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0.5px solid white;
+}
+.guess-section{
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 15px auto;
+    display: flex;
+    gap: 2px;
+    
+}
+.guess-char-box{
+    background-color: #55555593;
+    height: 34px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.gameWon{
+    background-color: #2dc653;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 4px;
+    padding: 5px 0;
+}
+.gameOver{
+    background-color: #e5383b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 4px;
+    gap: 5px;
+    padding: 15px;
+}
+.newGame{
+    background-color: #2196f3;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+}
