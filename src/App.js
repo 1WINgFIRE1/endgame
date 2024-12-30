@@ -49,7 +49,6 @@ function App() {
     word.map(obj=>{
       if(obj.letter===value.toLowerCase())
       {
-        console.log("hi")
         milgaya=true
 
         document.getElementById(`${id}`).style.backgroundColor="#2dc653"
