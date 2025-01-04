@@ -46,7 +46,7 @@ function App() {
   function handleClick(value,id){
 
     let milgaya=false
-    word.map(obj=>{
+    word.forEach(obj=>{
       if(obj.letter===value.toLowerCase())
       {
         milgaya=true
