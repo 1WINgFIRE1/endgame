@@ -82,7 +82,13 @@ function App() {
       document.getElementById(`${id}`).style.backgroundColor="#e5383b"
       // make button wrong
       
-      let cba=keyboardKey[value.charCodeAt(0)-65].isTapWrong ? "":languages[8-counter].isDead=true
+      // let cba=keyboardKey[value.charCodeAt(0)-65].isTapWrong ? "":languages[8-counter].isDead=true
+      if (keyboardKey[value.charCodeAt(0)-65].isTapWrong) {
+        // Do nothing, or any other action if needed
+      } else {
+        languages[8 - counter].isDead = true;
+      }
+      
       setKeyboardKey(prev=>{
         return prev.map(obj=>{
           if(value===obj.value){
